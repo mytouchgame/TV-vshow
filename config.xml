@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "net.i-Favorites.vshow"
+  versionCode = "1" 
+	version 	= "1.0">
+                                        
+	<name>行動電視台-台灣綜藝節目線上看</name>
+
+	<description>
+《行動電視台-台灣綜藝節目線上看》由i-Favorites.net製作，影片資料均來自於Youtube等影音平台。
+
+</description>
+
+	<author href="http://i-favorites.net/"
+		email="myTouchGame@gmail.com">
+		i-Favorites.net
+	</author>
+
+	<icon src="icon512.png" gap:platform="android" gap:role="default" />
+  <gap:plugin name="org.apache.cordova.inappbrowser" />
+  
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<preference name="orientation" value="auto" />
+	<preference name="stay-in-webview" value="true" />
+  <preference name="OpenAllWhitelistURLsInWebView" value="No" />
+	<preference name="android-installLocation" value="auto" />
+	
+
+	<access origin="*" /> 
+
+
+	
+</widget>
