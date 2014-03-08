@@ -51,7 +51,7 @@
 		</h3>
       <div data-role="navbar" data-iconpos="top" data-theme="b">
 		     <ul>
-		     	<li><a href="#home" data-icon="home">目錄</a></li>
+		     	<li><a href="#menu" data-rel="dialog" data-transition="slidedown" data-icon="home">目錄</a></li>
           <li><a onclick="window.open('http://i-Favorites.net/TV/vshow', '_system', 'location=no')" target="_blank" ref="external" data-ajax="false" data-icon="grid">最新</a></li>
           <li><a href="#about" data-rel="dialog" data-transition="slidedown" data-icon="info">說明</a></li>
 	     	</ul>
@@ -59,36 +59,17 @@
 	</div>
   
   <div data-role="header" data-theme="b">    
-   <h3> 目錄 </h3>
+   <h3> 台灣綜藝節目線上看 </h3>
 	</div>
 
-	<div data-role="content">                                                                                                  
-   		<ul data-role="listview">
-         <li>
-           <a target="_blank" onclick="window.open('http://i-Favorites.net/TV/vshow/cate.php?cate=訪談綜藝', '_blank', 'location=yes')" ref="external" data-ajax="false">訪談綜藝</a>
-         </li>
-         <li>
-           <a target="_blank" onclick="window.open('http://i-Favorites.net/TV/vshow/cate.php?cate=旅遊美食', '_blank', 'location=yes')" ref="external" data-ajax="false">旅遊美食</a>
-         </li>
-         <li>
-           <a target="_blank" onclick="window.open('http://i-Favorites.net/TV/vshow/cate.php?cate=音樂選秀', '_blank', 'location=yes')" ref="external" data-ajax="false">音樂選秀</a>
-         </li>
-         <li>
-           <a target="_blank" onclick="window.open('http://i-Favorites.net/TV/vshow/cate.php?cate=政論談話', '_blank', 'location=yes')" ref="external" data-ajax="false">政論談話</a>
-         </li>
-         <li>
-           <a target="_blank" onclick="window.open('http://i-Favorites.net/TV/vshow/cate.php?cate=女性時尚', '_blank', 'location=yes')" ref="external" data-ajax="false">女性時尚</a>
-         </li>
-         <li>
-           <a target="_blank" onclick="window.open('http://i-Favorites.net/TV/vshow/cate.php?cate=娛樂新聞', '_blank', 'location=yes')" ref="external" data-ajax="false">娛樂新聞</a>
-         </li>
-         <li>
-           <a target="_blank" onclick="window.open('http://i-Favorites.net/TV/vshow/cate.php?cate=益智挑戰', '_blank', 'location=yes')" ref="external" data-ajax="false">益智挑戰</a>
-         </li>
-         <li>
-           <a target="_blank" onclick="window.open('http://i-Favorites.net/TV/vshow/cate.php?cate=搞笑遊戲', '_blank', 'location=yes')" ref="external" data-ajax="false">搞笑遊戲</a>
-         </li>
-   		</ul>
+	<div data-role="content">   
+  
+        <div data-role="fieldcontain">
+            <textarea name="" id="textarea2" placeholder="提醒：《行動電視台》需要網路連線，請先確定您的裝置已連上網，並且有辦理上網吃到飽方案或使用WIFI上網，以免上網費用破表。
+"></textarea>
+        </div>
+
+
       <BR>
       <a onclick="go_there();"  data-theme='b' data-role='button'>離開</a>      
 
@@ -97,6 +78,50 @@
   </div>
 
 </div>  
+
+<!--Menu-->
+<div data-role="page" id="menu">
+
+  <div data-theme="a" data-role="header">
+		<h3>
+		目錄
+		</h3>
+	</div>
+  
+	<div data-role="content">                                                                                                  
+   		<ul data-role="listview">
+         <li>
+           <a href="http://i-Favorites.net/TV/vshow/cate.php?cate=訪談綜藝" ref="external" data-ajax="false">訪談綜藝</a>
+         </li>
+         <li>
+           <a href="http://i-Favorites.net/TV/vshow/cate.php?cate=旅遊美食" ref="external" data-ajax="false">旅遊美食</a>
+         </li>
+         <li>
+           <a href="http://i-Favorites.net/TV/vshow/cate.php?cate=音樂選秀" ref="external" data-ajax="false">音樂選秀</a>
+         </li>
+         <li>
+           <a href="http://i-Favorites.net/TV/vshow/cate.php?cate=政論談話" ref="external" data-ajax="false">政論談話</a>
+         </li>
+         <li>
+           <a href="http://i-Favorites.net/TV/vshow/cate.php?cate=女性時尚" ref="external" data-ajax="false">女性時尚</a>
+         </li>
+         <li>
+           <a href="http://i-Favorites.net/TV/vshow/cate.php?cate=娛樂新聞" ref="external" data-ajax="false">娛樂新聞</a>
+         </li>
+         <li>
+           <a href="http://i-Favorites.net/TV/vshow/cate.php?cate=益智挑戰" ref="external" data-ajax="false">益智挑戰</a>
+         </li>
+         <li>
+           <a href="http://i-Favorites.net/TV/vshow/cate.php?cate=搞笑遊戲" ref="external" data-ajax="false">搞笑遊戲</a>
+         </li>
+   		</ul>
+  </div>
+  
+  <div data-theme="a" data-role="footer">
+        <center>Copyright© <a target='blank' onclick="window.open('http://i-Favorites.net/', '_system', 'location=yes')" data-ajax="false">i-Favorites.net</a></center>  
+  </div>   
+
+</div>
 
 <!--About-->
 <div data-role="page" id="about">
@@ -109,7 +134,7 @@
   
 	<div data-role="content">  
                                                                                                     
-  《行動電視台》由i-Favorites.net製作，僅作學術研究使用，影片資料均來自於Youtube等影音平台。本站僅提供快速搜尋結果及索引，並無上傳、維護、儲存、重製、發佈任何影片，本站亦法確認搜尋結果之影片版權合法性。如有版權疑義，請向Youtube等影音平台與上傳者提出異議。
+  《行動電視台》由i-Favorites.net製作，僅作學術研究使用，影片資料均來自於Youtube等影音平台。本站僅提供快速搜尋結果及索引，並無上傳、維護、儲存、重製、發佈任何影片，本站亦無法確認搜尋結果之影片版權合法性。如有版權疑義，請向Youtube等影音平台與上傳者提出異議。
 　<hr>
     <a target='blank' onclick="window.open('http://i-Favorites.net/', '_system', 'location=yes')" data-theme='b' data-role='button'>i-Favorites.net首頁</a> 
   </div>
